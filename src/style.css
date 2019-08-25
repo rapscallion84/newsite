@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    background-color: #81BEF7;
+    color: #FFffff;/*#81BEF7 dark  #EFFBFB light*/
+    font-family: 'Cairo', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    width: 1200px;
+    margin: 0 auto; 
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
