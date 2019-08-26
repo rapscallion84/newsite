@@ -5,18 +5,36 @@
 }
 
 html {
-    background-color: #81BEF7;
+    background-color: #EFFBFB;
     color: #FFffff;/*#81BEF7 dark  #EFFBFB light*/
     font-family: 'Cairo', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    width: 1200px;
-    margin: 0 auto; 
 }
 
-.nav {
+.bodywrap {
+    width: 1000px;
+    margin: 0 auto; 
+    background-color: #81BEF7;
+}
+
+.primary_navigation {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    }
+    justify-content: flex-end ;
+    
+}
+
+.primary_navigation_list {
+    padding: 15px;
+    text-decoration: none; 
+    color:#FFffff;
+}
+
+.primary_navigation_list:hover {
+    background-color: #EFFBFB; 
+    color: #81BEF7;
+}
+
