@@ -61,7 +61,7 @@ html {
 .method {
     padding: 20px 20px;
     color: #81BEF7;
-    background-color: #EFFBFB; 
+    background-color: rgb(255, 255, 255); 
 }
 
 .method_header {
@@ -70,7 +70,8 @@ html {
 }
 
 .method_text-compound-exercise {
-    border: solid black 2px;
+    border: solid grey 2px;
+    border-radius: 10%;
 }
 
 .method_text-compound {
@@ -79,5 +80,9 @@ html {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+}
+.method_text-compound img {
+    height: 70px;
+    width: auto;
 }
 
