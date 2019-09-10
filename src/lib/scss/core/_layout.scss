@@ -1,0 +1,32 @@
+// Breakpoints
+$breakpoints: (
+  'tablet': (min-width: 767px),
+  'laptop': (min-width: 992px),
+  'desktop': (min-width: 1200px)) 
+  !default;
+
+// Mixin
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    +"Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// Styles
+.bodywrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include breakpoint('tablet') {
+    width: 80%;
+    padding: 0;
+  }
+}
