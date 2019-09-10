@@ -1,0 +1,15 @@
+// Component
+.text-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+// Elements
+.text-content__title {
+  @extend %h3;
+}
+
+.text-content__body {
+  @extend %p;
+}

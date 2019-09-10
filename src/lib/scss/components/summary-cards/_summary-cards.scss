@@ -1,0 +1,35 @@
+// Component
+.summary-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include breakpoint('tablet') {
+    flex-direction: row;
+    margin: -5px;
+  }
+}
+
+// Elements
+.summary-cards__card {
+  border: solid grey 2px;
+  border-radius: 10%;
+  margin: 5px;
+  padding: 10px;
+}
+
+.summary-cards__image img {
+  object-fit: contain;
+  height: 50px;
+  width: 50px;
+}
+
+.summary-cards__title {
+  @extend %h4;
+
+  font-weight: bold;
+}
+
+.summary-cards__body {
+  @extend %p;
+}

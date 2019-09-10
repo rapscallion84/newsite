@@ -1,0 +1,28 @@
+// Component
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: $blue;
+  width: 100%;
+
+  @include breakpoint('tablet') {
+    justify-content: flex-end;
+  }
+}
+
+// Elements
+.main-nav__item {
+  padding: 20px 10px;
+  color: $accent-white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s background-color;
+
+  &:hover {
+    background-color: $accent-white;
+    color: $blue;
+  }
+}
+
+// Modifiers
+
